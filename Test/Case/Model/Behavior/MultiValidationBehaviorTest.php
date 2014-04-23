@@ -1,15 +1,33 @@
 <?php
+/**
+ * MultiValidationBehaviorTest file
+ *
+ * Licensed under The MIT License
+ * For full copyright and license information, please see the LICENSE.txt
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @copyright     Copyright (c) Codaxis (http://codaxis.com)
+ * @author        augusto-cdxs (https://github.com/augusto-cdxs/
+ * @link          https://github.com/Codaxis/parsley-helper
+ * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ */
 
 CakePlugin::load('MultiValidation');
 App::uses('MultiValidationBehavior', 'MultiValidation.Model/Behavior');
 
 /**
- * MultiValidation model enabled
+ * MultiValidation model for testing
  */
 class MultiValidationModel extends CakeTestModel {
-    
+
+/**
+ * @var string
+ */
     public $useTable = null;
-    
+
+/**
+ * @var array
+ */
     public $validate = array(
         'field1' => array(
             'mustNotBeBlank' => array(
@@ -23,9 +41,12 @@ class MultiValidationModel extends CakeTestModel {
         ),
     );
 
+/**
+ * @var array
+ */
     public $actsAs = array(
         'MultiValidation.MultiValidation' => array(
-            'types' => array( 
+            'types' => array(
                 'ValidationA' => array(
                     'field2' => array(
                         'mustBeAnUrl' => array(
@@ -95,7 +116,7 @@ class MultiValidationTest extends CakeTestCase {
         $this->Model->addValidation('ValidationA');
         $this->assertEqual($this->Model->validate, $target);
         $this->assertEqual($this->Model->loadedValidation(), array('_default', 'ValidationA'));
-        
+
         $target = array(
             'field1' => array(
                 'mustNotBeBlank' => array(
@@ -137,7 +158,7 @@ class MultiValidationTest extends CakeTestCase {
         $this->Model->loadValidation('ValidationA');
         $this->assertEqual($this->Model->validate, $target);
         $this->assertEqual($this->Model->loadedValidation(), array('ValidationA'));
-        
+
         $target = array(
             'field3' => array(
                 'mustBeAnEmail' => array(
@@ -171,7 +192,7 @@ class MultiValidationTest extends CakeTestCase {
         $this->Model->addValidation('ValidationA');
         $this->Model->addValidation('ValidationB');
         $this->Model->resetValidation('ValidationB');
-        
+
         $this->assertEqual($this->Model->validate, $target);
         $this->assertEqual($this->Model->loadedValidation(), array('_default'));
     }
