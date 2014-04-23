@@ -8,7 +8,7 @@
  *
  * @copyright     Copyright (c) Codaxis (http://codaxis.com)
  * @author        augusto-cdxs (https://github.com/augusto-cdxs/
- * @link          https://github.com/Codaxis/parsley-helper
+ * @link          https://github.com/Codaxis/cakephp-multivalidation
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
