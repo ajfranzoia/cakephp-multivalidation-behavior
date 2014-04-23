@@ -12,17 +12,17 @@ How to install
 
 You can just copy the behavior file to your APP/Model/Behavior folder
 
-- or -
+*or*
 
 You can also install the plugin as with every other plugin:
 
-* Put the files in `APP/Plugin/MultiValidation`
-* In your bootstrap.php: `CakePlugin::load('MultiValidation')` or `CakePlugin::loadAll()`
+* Put the files in ```APP/Plugin/MultiValidation```
+* In your bootstrap.php add ```CakePlugin::load('MultiValidation')``` or just ```CakePlugin::loadAll()```
 
 How to use
 ----------
 
-Enable the plugin in your target model
+Enable the plugin in your target model:
 
 ```php
 class User extends AppModel {
