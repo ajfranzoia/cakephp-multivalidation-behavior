@@ -74,26 +74,21 @@ Then in your model or controller you can do the following actions:
 ```php
     // Add new username and email validation:
     $User->addValidation('enforceUsernameAndEmail');
-    // A call to $User->loadedValidation() returns:
-    // array('enforceUsernameAndEmail')
+    // $User->loadedValidation() would return array('enforceUsernameAndEmail')
 
     // Reset to default state:
     $User->resetValidation();
-    // A call to $User->loadedValidation() returns:
-    // array('_default')
+    // $User->loadedValidation() would return array('_default')
 
     // Load and set only the password validation:
     $User->loadValidation('enforcePassword');
-    // A call to $User->loadedValidation() returns:
-    // array('enforcePassword')
+    // $User->loadedValidation() would return array('enforcePassword')
 
     // Add the other validation type also:
     $User->addValidation('enforceUsernameAndEmail');
-    // A call to $User->loadedValidation() returns:
-    // array('enforcePassword', 'enforceUsernameAndEmail')
+    // $User->loadedValidation() would return array('enforcePassword', 'enforceUsernameAndEmail')
 
     // Reset again to default state:
     $User->resetValidation();
-    // A call to $User->loadedValidation() returns:
-    // array('_default')
+    // $User->loadedValidation() would return array('_default')
 ```
