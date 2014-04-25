@@ -3,7 +3,9 @@ CakePHP MultiValidation behavior
 
 A CakePHP behavior that allows easy modifying of validation rules on the fly.
 
-Compatible with Cake 2.x
+Compatible with Cake 2.4.7+
+
+Feel free to make any code/docs contributions or post any issues.
 
 [![Build Status](https://travis-ci.org/Codaxis/cakephp-multivalidation.svg?branch=master)](https://travis-ci.org/Codaxis/cakephp-multivalidation)
 
