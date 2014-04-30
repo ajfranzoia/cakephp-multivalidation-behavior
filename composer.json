@@ -1,5 +1,5 @@
 {
-	"name": "codaxis/cakephp-multivalidation",
+	"name": "codaxis/cakephp-multivalidation-behavior",
 	"description": "A CakePHP behavior that allows easy modifying of validation rules on the fly.",
 	"type": "cakephp-plugin",
 	"keywords": ["cakephp","validation","multivalidation"],
