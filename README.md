@@ -7,7 +7,7 @@ Compatible with Cake 2.4.7+
 
 Feel free to make any code/docs contributions or post any issues.
 
-[![Build Status](https://travis-ci.org/Codaxis/cakephp-multivalidation-behavior.svg?branch=master)](https://travis-ci.org/Codaxis/cakephp-multivalidation-behavior)
+[![Build Status](https://travis-ci.org/ajfranzoia/cakephp-multivalidation-behavior.svg?branch=master)](https://travis-ci.org/ajfranzoia/cakephp-multivalidation-behavior)
 
 How to install
 ----------
