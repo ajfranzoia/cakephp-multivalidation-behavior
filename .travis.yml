@@ -7,7 +7,8 @@ php:
 
 env:
   - CAKE_VERSION=2.4.7
-  - CAKE_VERSION=master
+  - CAKE_VERSION=2.5.6
+  - CAKE_VERSION=2.6.0
 
 before_script:
   - sh -c "mysql -e 'CREATE DATABASE cakephp_test;'"
